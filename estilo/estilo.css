@@ -1,0 +1,96 @@
+/* Custom Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carousel-item img {
+    max-height: 700px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    bottom: 30px; /* Ajusta a posição da legenda */
+}
+
+.hero {
+    padding: 300px 0;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Ajustado para começar no topo */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ajustado para cobrir toda a altura do header */
+    background: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade do texto */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+#proposta {
+    background-color: #f8f9fa;
+}
+
+#formulario {
+    background-color: #e9ecef;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero p {
+        font-size: 0.875rem;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
